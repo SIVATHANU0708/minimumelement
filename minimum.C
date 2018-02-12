@@ -5,16 +5,16 @@ int main()
   printf("enter a number:");
   scanf("%d",&n);
   printf("enter an %d intgers: ",n);
-  for(i=0;i<=n;i++)
+  for(i=0;i<n;i++)
     {
     scanf("%d",&array[i]);
     }
- array[i]=minimum;
-  for(i=0;i<=n;i++)
+ minimum=array[0];
+  for(i=0;i<n;i++)
     {
-    if(array[i]<minimum)
+    if(minimum>array[i])
       {
-      array[i]=minimum;
+      minimum=array[i];
       }
     }
   printf("the minimum element in this array is %d",minimum);
